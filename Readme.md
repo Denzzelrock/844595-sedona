@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Утятников](https://up.htmlacademy.ru/htmlcss/22/user/844595).
-* Наставник: [Дарья Сабурова]{https://htmlacademy.ru/profile/goodwill_darina}.
+* Наставник: [Дарья Сабурова](https://htmlacademy.ru/profile/goodwill_darina).
 
 ---
 
