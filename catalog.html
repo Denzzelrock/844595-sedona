@@ -5,84 +5,82 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-     <header class="main-header">
-       <nav class="main-navigation">
-         <a href="index.html">
-           <img class="logo-img" src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo">
-         </a>
-         <ul class="site-navigation">
-           <li><a href="info.html">Информация</a></li>
-           <li><a href="photov-video.html">Фото и видео</a></li>
-           <li><a href="mapstate.html">Карта штата</a></li>
-           <li><a href="#">Гостиницы</a></li>
-         </ul>
-       </nav>
-     </header>
-      <main>
-        <section class="filter">
-           <form action="#" method="get" class="filter-category">
-             <h3>Инфраструктура:</h3>
-             <p><input type="checkbox"   value="pool" checked>Бассейн</p>
-             <p><input type="checkbox"   value="parking">Парковка</p>
-             <p><input type="checkbox"   value="wifi">Wi-fi</p>
-             <h3>Тип жилья:</h3>
-             <p><input type="checkbox"   value="hotel" checked>Гостиница</p>
-             <p><input type="checkbox"   value="motel" checked>Мотель</p>
-             <p><input type="checkbox"   value="aparatments" checked>Апартаменты</p>
-             <h3>Стоимость в сутки:</h3>
-             <p>от<input class="min-price"  type="number" value="0" min="0" max="5000"></p>
-             <p>до<input class="max-price" type="number" value="3000" min="0" max="5000"></p>
-             <button type="submit">Показать</button>
-           </form>
-          </section>
-        <section class="results">
-          <h3>Найдено:</h3>
-           <ul class="search-results">
-             <li><a class="sorting-item disabled" href="#">По цене</a></li>
-             <li><a class="disabled" href="#">По типу</a></li>
-             <li><a class="disabled" href="#">По рейтингу</a></li>
-             <li><a class="disabled" href="#">По возрастанию</a></li>
-             <li><a class="sorting-activ disabled" href="#">По убыванию</a></li>
-           </ul>
-              <div class="hotel">
-                <img src="img/hotel-img1.jpg" alt="Amara Resort & Spa">
-                    <p>Гостиница</p>
-                    <p>от 4000 р.</p>
-                    <a href="#">Подробнее</a>
-                    <a href="#">Заброниировать</a>
-                    <p class="rating-text">Рейтинг: 8,5</p>
-                </div>
-                <div class="hotel">
-                  <img src="img/hotel-img2.jpg" alt="Desrt Quail Inn">
-                      <p>Мотель</p>
-                      <p>от 3000 р.</p>
-                      <a href="#">Подробнее</a>
-                      <a href="#">Заброниировать</a>
-                      <p class="rating-text">Рейтинг: 8,9</p>
-                  </div>
-                  <div class="hotel">
-                    <img src="img/hotel-img3.jpg" alt="Villas At Poco Diablo">
-                        <p>Апартаменты</p>
-                        <p>от 2000 р.</p>
-                        <a href="#">Подробнее</a>
-                        <a href="#">Заброниировать</a>
-                        <p class="rating-text">Рейтинг: 9,2</p>
-                  </div>
-                </section>
-              </main>
-        <footer class="main-footer">
-          <h3>#visitsedona</h3>
-          <div class="footer-social">
-            <ul>
-              <li><a class="social-button" href="#">Твиттер</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Ю-туб</a></li>
-            </ul>
-          </div>
-          <div class="footer-copyrigt">
-            <span>website by</span>
-            <a class="logo-htmlacademy" href="https://htmlacademy.ru/">logo-htmlacademy</a>
-          </div>
-        </footer>
-      </body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html">
+          <img class="logo-img" src="img/sedona-logo.png" width="138" height="70" alt="Sedona logo">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photov-video.html">Фото и видео</a></li>
+          <li><a href="mapstate.html">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="filter">
+        <form action="#" method="get" class="filter-category">
+          <h3>Инфраструктура:</h3>
+          <p><input type="checkbox"   value="pool" checked>Бассейн</p>
+          <p><input type="checkbox"   value="parking">Парковка</p>
+          <p><input type="checkbox"   value="wifi">Wi-fi</p>
+          <h3>Тип жилья:</h3>
+          <p><input type="checkbox"   value="hotel" checked>Гостиница</p>
+          <p><input type="checkbox"   value="motel" checked>Мотель</p>
+          <p><input type="checkbox"   value="aparatments" checked>Апартаменты</p>
+          <h3>Стоимость в сутки:</h3>
+          <p>от<input class="min-price"  type="number" value="0" min="0" max="5000"></p>
+          <p>до<input class="max-price" type="number" value="3000" min="0" max="5000"></p>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="results">
+        <h3>Найдено:</h3>
+        <ul class="search-results">
+          <li><a class="sorting-item disabled" href="#">По цене</a></li>
+          <li><a class="disabled" href="#">По типу</a></li>
+          <li><a class="disabled" href="#">По рейтингу</a></li>
+          <li><a class="disabled" href="#">По возрастанию</a></li>
+          <li><a class="sorting-activ disabled" href="#">По убыванию</a></li>
+        </ul>
+        <div class="hotel">
+          <img src="img/hotel-img1.jpg" alt="Amara Resort & Spa">
+          <p>Гостиница</p>
+          <p>от 4000 р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Заброниировать</a>
+          <p class="rating-text">Рейтинг: 8,5</p>
+        </div>
+        <div class="hotel">
+          <img src="img/hotel-img2.jpg" alt="Desrt Quail Inn">
+          <p>Мотель</p>
+          <p>от 3000 р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Заброниировать</a>
+          <p class="rating-text">Рейтинг: 8,9</p>
+        </div>
+        <div class="hotel">
+          <img src="img/hotel-img3.jpg" alt="Villas At Poco Diablo">
+          <p>Апартаменты</p>
+          <p>от 2000 р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Заброниировать</a>
+          <p class="rating-text">Рейтинг: 9,2</p>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h3>#visitsedona</h3>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">YouTube</a></li>
+      </ul>
+      <div class="footer-copyrigt">
+        <span>website by</span>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru/">logo-htmlacademy</a>
+      </div>
+    </footer>
+  </body>
   </html>
