@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="#">
-          <img class="logo-img" src="img/logo.svg" width="138" height="70" alt="Sedona logo">
+          <img class="logo-img" src="img/logo.svg" width="138" height="70" alt="Седона логотип">
         </a>
         <ul class="nav">
           <li><a href="info.html">Информация</a></li>
@@ -34,7 +34,7 @@
           <h2>Настоящий городок</h2>
           <span>-№1-</span>
           <p>Седона-не атракцион для туристов здесь течет своя жизнь.</p>
-          <img src="img/sedonareason1.jpg" width="800" height="401" alt="Sedona fist picture">
+          <img src="img/sedonareason1.jpg" width="800" height="401" >
           <h2 class="visual-hidden">Приемущества Седоны</h2>
           <ul class="reason-list">
             <li class="reason-item">
@@ -52,7 +52,7 @@
           </ul>
         </div>
         <div class="reason">
-          <img src="img/sedonareason2.jpg" width="800" height="400" alt="Sedona second picture">
+          <img src="img/sedonareason2.jpg" width="800" height="400" >
           <h2>Там есть мост дьявола</h2>
           <span>-№2-</span>
           <p>Да, По нему можно пройти! Если вы конечно осмелитесь</p>
@@ -80,10 +80,25 @@
         </div>
         <a href="#">Поиск гостиницы в Седоне</a>
         <form action="https://echo.htmlacademy.ru" method="text">
-          <p>Дата заезда<input type="date" value="" placeholder="24 Апреля 2017"></p>
-          <p>Дата выезда<input type="date" value="" placeholder="4 Июля 2017"></p>
-          <p>Взрослые<input type="submit" value="-">2<input type="submit" value="+">Дети
-          <input type="submit" value="-">0<input type="submit" value="+"></p>
+          <label class="visual-hidden">Форма для поиска гостиницы в Седоне</label>
+          <p>Дата заезда<input type="date" value="24.04.2017"></p>
+          <p>Дата выезда<input type="date" value="4 Июля 2017"></p>
+          <p class="adults">
+            <label for="adults">Взрослые:</label>
+            <span class="input-wrapper">
+              <button type="button">-</button>
+              <input class="people-number" type="text" value="2">
+              <button type="button">+</button>
+            </span>
+          </p>
+          <p class="children">
+            <label for="children">Дети:</label>
+            <span class="input-wrapper">
+              <button type="button">-</button>
+              <input class="people-number" type="text" value="0">
+              <button type="button">+</button>
+            </span>
+          </p>
           <button class="button" type="submit">Найти</button>
         </form>
         <div class="map">
@@ -94,6 +109,7 @@
       <footer class="main-footer">
         <h3>#visitsedona</h3>
         <ul class="footer-social">
+          <label class="visual-hidden">Мы в социальных сетях</label>
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
           <li><a class="social-button" href="#">YouTube</a></li>
@@ -101,7 +117,7 @@
         <div class="footer-copyrigt">
           <span>website by</span>
           <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy logo">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy логотип">
           </a>
         </div>
       </footer>
