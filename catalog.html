@@ -20,20 +20,38 @@
     </header>
     <main>
       <section class="filter">
+        <h3 class="visual-hidden">Фильтр поиска</h3>
         <form action="#" method="get" class="filter-category">
-          <h3>Инфраструктура:</h3>
-          <label>Бассейн</label>
-          <input type="checkbox" value="pool" checked>
-          <label>Парковка</label>
-          <input type="checkbox" value="parking">
-          <label>Wi-fi</label>
-          <input type="checkbox" value="wifi">
-          <h3>Тип жилья:</h3>
-          <label>Гостиница</label>
-          <input type="checkbox" value="hotel" checked>
-          <label>Мотель</label>
-          <input type="checkbox"   value="motel" checked>
-          <label>Апартаменты</label><input type="checkbox"   value="aparatments" checked>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <label for="pool">Бассейн</label>
+              <input class="visual-hidden" type="checkbox" value="pool" id="pool" name="pool-filter" checked>
+            </li>
+            <li class="filter-option">
+              <label for="parking">Парковка</label>
+              <input class="visual-hidden" type="checkbox" value="parking" id="parking" name="parking-filter">
+            </li>
+            <li>
+              <label for="wi-fi">Wi-fi</label>
+              <input class="visual-hidden" type="checkbox" value="wifi" id="wi-fi" name="wi-fi-filter">
+            </li>
+          </ul>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <label for="hotel">Гостиница</label>
+              <input type="checkbox" value="hotel" id="hotel" name="hotel-filter" checked>
+            </li>
+            <li>
+              <label for="motel">Мотель</label>
+              <input type="checkbox"   value="motel" id="motel" name="motel-filter" checked>
+            </li>
+            <li class="filter-option">
+              <label for="apartments">Апартаменты</label>
+              <input type="checkbox"   value="aparatments" id="apartaments" name="apartaments-filter" checked>
+            </li>
+          </ul>
           <h3>Стоимость в сутки:</h3>
           <p>от<input class="min-price"  type="number" value="0" min="0" max="5000"></p>
           <p>до<input class="max-price" type="number" value="3000" min="0" max="5000"></p>
@@ -42,14 +60,15 @@
       </section>
       <section class="results">
         <h3>Найдено:</h3>
-        <h3 class="visual-hidden">Седона в социальных сетях</h3>
-        <ul class="search-results">
-          <li><a class="sorting-item disabled" href="#">По цене</a></li>
-          <li><a class="disabled" href="#">По типу</a></li>
-          <li><a class="disabled" href="#">По рейтингу</a></li>
-          <li><a class="disabled" href="#">По возрастанию</a></li>
-          <li><a class="sorting-activ disabled" href="#">По убыванию</a></li>
-        </ul>
+        <div class="social-networks">
+          <ul class="search-results">
+            <li><a class="sorting-item disabled" href="#">По цене</a></li>
+            <li><a class="disabled" href="#">По типу</a></li>
+            <li><a class="disabled" href="#">По рейтингу</a></li>
+            <li><a class="disabled" href="#">По возрастанию</a></li>
+            <li><a class="sorting-activ disabled" href="#">По убыванию</a></li>
+          </ul>
+        </div>
         <div class="hotel">
           <img src="img/amararesort.png" alt="Amara Resort & Spa">
           <p>Гостиница</p>
