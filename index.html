@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="text/style" link>
   </head>
   <body>
     <header class="main-header">
@@ -23,19 +24,18 @@
         <h1 class="visually-hidden">Седона, штат Аризона</h1>
         <img src="img/intro-welcome.svg" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="459" height="353" >
       </section>
-      <section class="about">
+      <section class="reasons">
+        <h2 class="visually-hidden">Причины</h2>
         <div class="about-info">
           <h2>Седона — небольшой городок в Аризоне, зaслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-      </section>
-      <section class="reasons">
         <div class="reason">
           <h2>Настоящий городок</h2>
           <span>-№1-</span>
           <p>Седона-не атракцион для туристов здесь течет своя жизнь.</p>
           <img src="img/sedonareason1.jpg" width="800" height="401" alt="" >
-          <h2 class="visual-hidden">Приемущества Седоны</h2>
+          <h2 class="visually-hidden">Приемущества Седоны</h2>
           <ul class="reason-list">
             <li class="reason-item">
               <h3>Жилье</h3>
@@ -74,26 +74,27 @@
         </div>
       </section>
       <section>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="search">
-          <h2 class="search-title">Заинтерисовались?</h2>
+          <b class="search-title">Заинтерисовались?</b>
           <p>Укажите предполагаемую дату поездки, и мы покажем вам лучшее предложение гостиниц в Седоне</p>
+          <a href="#">Поиск гостиницы в Седоне</a>
         </div>
-        <a href="#">Поиск гостиницы в Седоне</a>
-        <h3 class="visual-hidden">Форма для поиска гостиницы в Седоне</h3>
         <form action="https://echo.htmlacademy.ru" method="text">
+          <h3 class="visually-hidden">Форма для поиска гостиницы в Седоне</h3>
           <p>
-            <label>Дата заезда</label>
-            <input type="date" value="24 Апреля 2017">
+            <label for="date-arrive">Дата заезда</label>
+            <input type="text" id="date-arrive" value="24 Апреля 2017">
           </p>
           <p>
-            <label>Дата выезда</label>
-            <input type="date" value="4 Июля 2017">
+            <label for="date-departure">Дата выезда</label>
+            <input type="text" id="date-departure" value="4 Июля 2017">
           </p>
           <p class="adults">
             <label for="adults">Взрослые:</label>
             <span class="input-wrapper">
               <button type="button">-</button>
-              <input class="people-number" type="text" id="adults" value="2">
+              <input type="text" class="people-number" id="adults" value="2">
               <button type="button">+</button>
             </span>
           </p>
@@ -101,11 +102,11 @@
             <label for="children">Дети:</label>
             <span class="input-wrapper">
               <button type="button">-</button>
-              <input class="people-number" type="text" id="children" value="0">
+              <input type="text" class="people-number" id="children" value="0">
               <button type="button">+</button>
             </span>
           </p>
-          <button class="button" type="submit">Найти</button>
+          <button type="submit" class="button">Найти</button>
         </form>
         <div class="map">
           <h2 class="visually-hidden">Расположение Седоны на карте</h2>
@@ -115,6 +116,7 @@
       <footer class="main-footer">
         <h3>#visitsedona</h3>
         <div class="social-networks">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="footer-social">
             <li><a class="social-button" href="#">Twitter</a></li>
             <li><a class="social-button" href="#">Facebook</a></li>

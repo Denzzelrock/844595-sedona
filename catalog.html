@@ -20,53 +20,65 @@
     </header>
     <main>
       <section class="filter">
-        <h3 class="visual-hidden">Фильтр поиска</h3>
+        <h3 class="visually-hidden">Фильтр поиска</h3>
         <form action="#" method="get" class="filter-category">
-          <legend>Инфраструктура:</legend>
-          <ul class="filter-list">
-            <li class="filter-option">
+          <fieldset class="filter-list">
+            <legend>Инфраструктура:</legend>
+            <p class="filter-option">
+              <input type="checkbox" class="visually-hidden" id="pool" name="pool-filter" value="pool" checked>
               <label for="pool">Бассейн</label>
-              <input class="visual-hidden" type="checkbox" value="pool" id="pool" name="pool-filter" checked>
-            </li>
-            <li class="filter-option">
+            </p>
+            <p class="filter-option">
+              <input type="checkbox" class="visually-hidden" id="parking"  name="parking-filter" value="parking" >
               <label for="parking">Парковка</label>
-              <input class="visual-hidden" type="checkbox" value="parking" id="parking" name="parking-filter">
-            </li>
-            <li>
+            </p>
+            <p>
+              <input type="checkbox" class="visually-hidden" id="wi-fi" name="wi-fi-filter" value="wifi"  >
               <label for="wi-fi">Wi-fi</label>
-              <input class="visual-hidden" type="checkbox" value="wifi" id="wi-fi" name="wi-fi-filter">
-            </li>
-          </ul>
-          <legend>Тип жилья:</legend>
-          <ul class="filter-list">
-            <li class="filter-option">
+            </p>
+          </fieldset>
+          <fieldset class="filter-list">
+            <legend>Тип жилья:</legend>
+            <p class="filter-option">
+              <input type="checkbox" id="hotel" name="hotel-filter" value="hotel" checked>
               <label for="hotel">Гостиница</label>
-              <input type="checkbox" value="hotel" id="hotel" name="hotel-filter" checked>
-            </li>
-            <li>
+            </p>
+            <p>
+              <input type="checkbox" id="motel" name="motel-filter" value="motel" checked>
               <label for="motel">Мотель</label>
-              <input type="checkbox"   value="motel" id="motel" name="motel-filter" checked>
-            </li>
-            <li class="filter-option">
+            </p>
+            <p class="filter-option">
+              <input type="checkbox" id="apartaments" name="apartaments-filter" value="aparatments" checked>
               <label for="apartments">Апартаменты</label>
-              <input type="checkbox"   value="aparatments" id="apartaments" name="apartaments-filter" checked>
-            </li>
-          </ul>
-          <h3>Стоимость в сутки:</h3>
-          <p>от<input class="min-price"  type="number" value="0" min="0" max="5000"></p>
-          <p>до<input class="max-price" type="number" value="3000" min="0" max="5000"></p>
-          <button type="submit">Показать</button>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки:</legend>
+            <p>
+              <label for="min-price">от</label>
+              <input type="number" class="min-price" id="min-price" value="0"  min="0" max="5000">
+            </p>
+            <p>
+              <label for="max-price">до</label>
+              <input type="number" class="max-price" id="max-price" value="3000"  min="0" max="5000">
+            </p>
+            <button type="submit">Показать</button>
+          </fieldset>
         </form>
       </section>
       <section class="results">
-        <h3>Найдено:</h3>
-        <div class="social-networks">
-          <ul class="search-results">
-            <li><a class="sorting-item disabled" href="#">По цене</a></li>
-            <li><a class="disabled" href="#">По типу</a></li>
-            <li><a class="disabled" href="#">По рейтингу</a></li>
-            <li><a class="disabled" href="#">По возрастанию</a></li>
-            <li><a class="sorting-activ disabled" href="#">По убыванию</a></li>
+        <h2 calss="visually-hidden">Результаты поиска</2>
+        <div class="results-bar">
+          <b>Найдено: 3</b>
+          <span>Сортировка:</span>
+          <ul class="results-sorting">
+            <li><a class="sorting-item selected" href="#">По цене</a></li>
+            <li><a class="sorting-item" href="#">По типу</a></li>
+            <li><a class="sorting-item" href="#">По рейтингу</a></li>
+          </ul>
+          <ul class="results-arrow">
+            <li><a class="arrow-item" href="#">По возрастанию</a></li>
+            <li><a class="arrow-item selected" href="#">По убыванию</a></li>
           </ul>
         </div>
         <div class="hotel">
@@ -97,12 +109,14 @@
     </main>
     <footer class="main-footer">
       <h3>#visitsedona</h3>
-      <h3 class="visual-hidden">Седона в социальных сетях</h3>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">YouTube</a></li>
-      </ul>
+      <div class="social-networks">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
       <div class="footer-copyrigt">
         <span>website by</span>
         <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
