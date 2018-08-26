@@ -15,18 +15,73 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden:not(:focus):not(:active)
 
-.visually-hidden:not(:focus):not(:active),
-.filters-checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #00000;
+  background-color: #ffffff;
+}
+
+.main-navigation,
+.site-navigation,
+.nav {
+  list-style: none;
+}
+
+.main-navigation a,
+.nav a,
+.site-navigation a {
+  color: #00000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.main-navigaton a:hover,
+.main-navigaton a:focus,
+.nav a:hover,
+.nav a:focus {
+  background-color: #92bdd8;
+}
+
+.main-showcase {
+  background-image: url('../img/showcase-bg.jpg');
+  background-repeat: no-repeat;
+}
+
+.filter {
+  background-image: url('../img/fonblur.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reason-list {
+  list-style: none;
+}
+.footer-social {
+  list-style: none;
+}
+.results-sorting,
+.results-arrow {
+  list-style: none;
+}
+fieldset {
+  border: none;
+}
+.reason1,
+.reason2 {
+  background-color: #81b3d2;
+}
+.reason-list {
+  background-color: white;
+}
+.search {
+  background-color: white;
+}
+
+.about-info {
+  background-color: white;
 }
