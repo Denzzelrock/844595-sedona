@@ -7,7 +7,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #333;
+  color: #333333;
   background-color: #f2f2f2;
 }
 
@@ -31,6 +31,7 @@ a {
   line-height: 26px;
   color: #00000;
   background-color: #ffffff;
+  font-weight: bolder;
 }
 
 .main-navigation,
@@ -90,10 +91,7 @@ fieldset {
 .about-info {
   background-color: white;
 }
-.eat {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 300;
+
 }
 .sorting {
   font-size: 12px;
@@ -130,6 +128,8 @@ fieldset {
   color: #666666;
   font-weight: normal;
   background-color: #f2f2f2;
+  width: 110px;
+  height: 28px;
 }
 
 .results {
@@ -156,5 +156,79 @@ fieldset {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  font-weight: bold;
+
+}
+.white-font {
+  color:white;
+}
+
+.font-item {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+.search-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 400;
+}
+.form-arrive:not(button),input:not(.min-price,.max-price) {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #766357;
+}
+.button-tofind {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #81b3d2;
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.more-info {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #81b3d2;
+}
+
+.book-it {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #766357;
+}
+
+.found-results {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
   font-weight: bold;
 }
