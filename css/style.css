@@ -246,7 +246,7 @@ input:not(.min-price,.max-price) {
 }
 
 .more-info {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 26px;
   color: #ffffff;
   font-weight: bold;
@@ -258,7 +258,7 @@ input:not(.min-price,.max-price) {
 }
 
 .book-it {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 26px;
   color: #ffffff;
   font-weight: bold;
