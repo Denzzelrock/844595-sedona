@@ -14,10 +14,10 @@
           <img class="logo-img" src="img/logo.svg" width="138" height="70" alt="Седона логотип">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photov-video.html">Фото и видео</a></li>
-          <li><a href="mapstate.html">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="information"><a  href="info.html">Информация</a></li>
+          <li class="photo-and-video"><a  href="photov-video.html">Фото и видео</a></li>
+          <li class="map-state"><a  href="mapstate.html">Карта штата</a></li>
+          <li class="hotels"><a  href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -29,14 +29,17 @@
             <legend class="filter-legend">Инфраструктура:</legend>
             <p class="filter-option">
               <input type="checkbox" class="visually-hidden" id="pool" name="pool-filter" value="pool" checked>
+              <img class="checkbox-on" src="img/checkbox-on.svg" width="27" height="23">
               <label for="pool">Бассейн</label>
             </p>
             <p class="filter-option">
               <input type="checkbox" class="visually-hidden" id="parking"  name="parking-filter" value="parking">
+              <img class="checkbox-off" src="img/checkbox-off.svg" width="23" height="23">
               <label for="parking">Парковка</label>
             </p>
-            <p>
+            <p  class="filter-option">
               <input type="checkbox" class="visually-hidden" id="wi-fi" name="wi-fi-filter" value="wifi">
+              <img class="checkbox-off" src="img/checkbox-off.svg" width="23" height="23">
               <label for="wi-fi">Wi-fi</label>
             </p>
           </fieldset>
@@ -44,28 +47,36 @@
             <legend class="filter-legend">Тип жилья:</legend>
             <p class="filter-option">
               <input type="checkbox" class="visually-hidden" id="hotel" name="hotel-filter" value="hotel" checked>
+              <img class="checkbox-on" src="img/checkbox-on.svg" width="27" height="23">
               <label for="hotel">Гостиница</label>
             </p>
-            <p>
+            <p class="filter-option">
               <input type="checkbox" class="visually-hidden" id="motel" name="motel-filter" value="motel" checked>
+              <img class="checkbox-on" src="img/checkbox-on.svg" width="27" height="23">
               <label for="motel">Мотель</label>
             </p>
             <p class="filter-option">
               <input type="checkbox" class="visually-hidden" id="apartaments" name="apartaments-filter" value="aparatments" checked>
+              <img class="checkbox-on" src="img/checkbox-on.svg" width="27" height="23">
               <label for="apartments">Апартаменты</label>
             </p>
           </fieldset>
           <fieldset>
-            <legend>Стоимость в сутки(р):</legend>
-            <p>
-              <label for="min-price">от</label>
-              <input type="number" class="min-price" id="min-price" value="0"  min="0" max="5000">
-            </p>
-            <p>
-              <label for="max-price">до</label>
-              <input type="number" class="max-price" id="max-price" value="3000"  min="0" max="5000">
-            </p>
-            <button class="show" type="submit">Показать</button>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
           </fieldset>
         </form>
       </section>
@@ -80,8 +91,16 @@
             <li><a class="sorting-item" href="#">По рейтингу</a></li>
           </ul>
           <ul class="results-arrow">
-            <li><a class="arrow-item" href="#">По возрастанию</a></li>
-            <li><a class="arrow-item-selected" href="#">По убыванию</a></li>
+            <li>
+              <a class="arrow-item" href="#">
+                <img src="img/icon-up-dir.svg">
+              </a>
+            </li>
+            <li>
+              <a class="arrow-item-selected" href="#">
+                <img src="img/icon-down-dir.svg">
+              </a>
+            </li>
           </ul>
         </div>
         <div class="hotel">
@@ -91,7 +110,14 @@
           <p class="price">от 4000 р.</p>
           <a class="more-info" href="#">Подробнее</a>
           <a class="book-it" href="#">Забронировать</a>
-          <p class="rating-text">Рейтинг: 8,5</p>
+          <div class="hotels-item-rating">
+            <span class="hotels-item-stars" aria-label="4*">
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <span class="star">*</span>
+            <p class="rating-text">Рейтинг: 8,5</p>
+          </div>
         </div>
         <div class="hotel">
           <h3><a class="name-hotels" href="#">Desrt Quail Inn</a></h3>
@@ -118,9 +144,21 @@
       <div class="social-networks">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social">
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li>
+            <a class="social-button" href="#">
+              <img class="social-icon" src="img/youtube.svg" width="48px" height="48" alt="YouTube">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img class="social-icon-fb" src="img/fb-icon.svg" width="48px" height="48" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img class="social-icon" src="img/twitter.svg" width="48px" height="48" alt="Twitter">
+            </a>
+          </li>
         </ul>
       </div>
       <div class="footer-copyrigt">
