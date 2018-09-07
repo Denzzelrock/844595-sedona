@@ -117,6 +117,10 @@ nav a .information:active {
   background-size: 100%;;
 }
 
+.showcase{
+  width: 459px;
+}
+
 .reasons{
   display: flex;
   flex-direction: row;
@@ -174,15 +178,23 @@ nav a .information:active {
   width: calc(100% / 3);
 }
 
-.filter {
-  background-image: url('../img/fonblur.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .reasonbgg {
   background-color: #eeeeee;
   height: 256px;
+}
+
+.white-font , .white-font-tittle {
+  color:white;
+}
+
+.white-font-tittle  {
+  width: 215px;
+  margin: 15px auto;
+}
+
+.reasonbgg h2 {
+  width: 150px;
+  margin: 15px auto;
 }
 
 .reason-list {
@@ -239,7 +251,6 @@ fieldset {
   align-items: center;
   padding-top: 60px;
   margin: 0;
-  height: 290px;
 }
 
 .search-title {
@@ -256,6 +267,14 @@ fieldset {
   color: #333333;
   font-weight: 400;
   padding-bottom: 55px;
+  width: 440px;
+  text-align: center;
+  margin: 0;
+}
+
+.reasonbgg p {
+  width: 257px;
+  margin: 15px auto;
 }
 
 .search-button {
@@ -287,21 +306,34 @@ fieldset {
   margin: auto;
 }
 
+.form-and-map {
+  position: relative;
+}
+
 .form-arrive {
-  width: 582px;
+  width: 470px;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 55px 55px;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
   box-shadow: 0px 13px 60px -21px black;
-  margin-top: -19px;
-  padding-top:  55px;
+  position: absolute;
+  left: 309px;
+  background: white;
+  z-index: 12;
+}
+
+.form-arrive p {
+  display: flex;
+  align-items: baseline;
 }
 
 .form-arrive input {
@@ -313,11 +345,25 @@ fieldset {
   font-weight: bold;
   width: 345px;
   padding-left: 13px;
+  border: 2px solid #eeeeee;
+  position: relative;
+}
+
+.calendar-svg {
+  position: absolute;
+  right: 60px;
+  top: 80px;
+}
+
+.calendar-svg-departure {
+  position: absolute;
+  right: 60px;
+  top: 152px;
 }
 
 .form-arrive input:focus {
   background-color: white;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #eeeeee;
 }
 
  .form-arrive .people-number {
@@ -326,11 +372,25 @@ fieldset {
 
 .form-arrive .adults {
   align-self: flex-start;
-  padding-left: 52px
+}
+
+.form-arrive .children {
+  text-align: center;
 }
 
 .form-arrive label {
-  padding-right: 25px;
+  width: 100px;
+  padding-right: 15px;
+}
+
+.form-arrive button:not(.button-tofind) {
+  height: 44px;
+  border: none;
+  width: 35px;
+  margin: -4px;
+  padding: 0;
+  background-color: #eeeeee;
+  color: #a9a9a9;
 }
 
 .button-tofind {
@@ -345,6 +405,8 @@ fieldset {
   padding-bottom: 21px;
   text-transform: uppercase;
   border: none;
+  margin-left: 8px;
+  margin-top: 55px;
 }
 
 .button-tofind:hover {
@@ -360,6 +422,11 @@ fieldset {
   background-color: #604e43;
 }
 /*Catalog---------------------------------------------------------------------------------------------------------------------------------------------------*/
+.filter {
+  background-image: url('../img/fonblur.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .filter-category {
   display: flex;
@@ -370,10 +437,6 @@ fieldset {
   align-self: center;
   margin-left: 40px;
   padding-right: 0;
-}
-
-.infrastructure {
-
 }
 
 .filter-option {
@@ -388,14 +451,12 @@ fieldset {
   width: 330px;
   margin: 50px auto;
   margin-left:  255px;
-
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -733,29 +794,11 @@ fieldset {
   font-weight: bold;
 }
 
-.white-font {
-  color:white;
-}
-
 .font-item {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   font-weight: bold;
-}
-
-.search-title {
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.search-text {
-  font-size: 14px;
-  line-height: 24px;
-  color: #333333;
-  font-weight: 400;
 }
 
 .form-arrive:not(button),
