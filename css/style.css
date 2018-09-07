@@ -572,7 +572,15 @@ fieldset {
   width: auto;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
-  padding-left: 40px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.sorting-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 640px;
 }
 
 .found-results {
@@ -588,14 +596,10 @@ fieldset {
   box-sizing: border-box;
   width: 316px;
   justify-content: space-around;
-  margin-right: 251px;
-  margin-left: -60px;
-  padding-left: -30px;
 }
 
 .results-arrow {
   display: flex;
-  padding: 0;
 }
 
 .sorting {
@@ -605,6 +609,7 @@ fieldset {
   font-weight: normal;
   margin-left: -45px;
   margin-right: -45px;
+  padding-right: 67px;
 }
 
 .sorting-item-selected {
@@ -635,7 +640,7 @@ fieldset {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.arrow-item {
+.arrow-item  {
   margin-right: 10px;
 }
 
@@ -646,14 +651,14 @@ fieldset {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hotel img {
-  order: -1;
-  margin-right: 30px;
+.first-column {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
 }
 
 .hotel-class {
   align-self: center;
-  margin-right: 40px;
 }
 
 .name-hotels  {
@@ -731,6 +736,10 @@ fieldset {
   text-align: center;
   padding-top: 6px;
   align-self: flex-end;
+}
+
+.hotels-item-stars {
+
 }
 
 .search-button:focus {
