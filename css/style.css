@@ -99,6 +99,10 @@ nav a .information:active {
   color: #766357;
 }
 
+.information-url {
+ color: #766357;
+}
+
 .photo-and-video {
   width: 20%;
   text-align: left;
@@ -385,7 +389,30 @@ fieldset {
   left: 492px;
   background-color: rgba(250 , 0 , 0 , 0.0);
   top: 80px;
-  opacity: 0.3;
+}
+
+.btn-calendar-arrive:hover {
+  background-image: url('../img/calendarhover.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 22px;
+  height: 23px;
+  border: none;
+  left: 492px;
+  background-color: rgba(250 , 0 , 0 , 0.0);
+  top: 80px;
+}
+
+.btn-calendar-arrive:focus {
+  background-image: url('../img/calendarfocus.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 22px;
+  height: 23px;
+  border: none;
+  left: 492px;
+  background-color: rgba(250 , 0 , 0 , 0.0);
+  top: 80px;
 }
 
 .btn-calendar-departure {
@@ -399,7 +426,32 @@ fieldset {
   left: 492px;
   background-color: rgba(250 , 0 , 0 , 0.0);
   top: 151px;
-  opacity: 0.3;
+}
+
+.btn-calendar-departure:hover {
+  background-image: url('../img/calendarhover.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 22px;
+  height: 23px;
+  border: none;
+  top: 120px;
+  left: 492px;
+  background-color: rgba(250 , 0 , 0 , 0.0);
+  top: 151px;
+}
+
+.btn-calendar-departure:focus {
+  background-image: url('../img/calendarfocus.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 22px;
+  height: 23px;
+  border: none;
+  top: 120px;
+  left: 492px;
+  background-color: rgba(250 , 0 , 0 , 0.0);
+  top: 151px;
 }
 
 .form-arrive input:focus {
@@ -913,12 +965,29 @@ fieldset {
   background-color: #81b3d2;
 }
 
+.twitter:hover  {
+  background-color: #669ec0;
+}
+
+.twitter:focus {
+  background-color: #5496bd;
+}
+
+
 .facebook {
   padding-left: 17px;
   padding-top: 13px;
   padding-right: 17px;
   padding-bottom: 13px;
   background-color: #81b3d2;
+}
+
+.facebook:hover {
+  background-color: #669ec0;
+}
+
+.facebook:focus {
+  background-color: #5496bd;
 }
 
 .youtube {
@@ -928,6 +997,15 @@ fieldset {
   padding-bottom: 16px;
   background-color: #81b3d2;
 }
+
+.youtube:hover {
+  background-color: #669ec0;
+}
+
+.youtube:focus {
+  background-color: #5496bd;
+}
+
 
 .hashtag {
   font-size: 21px;
