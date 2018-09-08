@@ -764,7 +764,31 @@ fieldset {
 }
 
 .main-footer {
-  background-color: white;
+  background-color: rgb(254,254,254 0.5);
+}
+
+.twitter  {
+  padding-left: 15px;
+  padding-top: 17px;
+  padding-right: 14px;
+  padding-bottom: 16px;
+  background-color: #81b3d2;
+}
+
+.facebook {
+  padding-left: 17px;
+  padding-top: 13px;
+  padding-right: 17px;
+  padding-bottom: 13px;
+  background-color: #81b3d2;
+}
+
+.youtube {
+  padding-left: 13px;
+  padding-top: 16px;
+  padding-right: 13px;
+  padding-bottom: 16px;
+  background-color: #81b3d2;
 }
 
 .hashtag {
@@ -780,7 +804,7 @@ fieldset {
 
 .footer-copyrigt span {
   margin-right: 9px;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .wed-text {
   font-size: 14px;
@@ -845,6 +869,8 @@ input:not(.min-price,.max-price) {
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
+  width: 155px;
+  padding-left: 65px;
 }
 
 .social-icon-fb {
@@ -856,4 +882,8 @@ margin-right: 7px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.logo-htmlacademy:hover {
+  fill: #81b3d2;
 }
