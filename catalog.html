@@ -17,7 +17,7 @@
           <li class="information"><a  href="info.html">Информация</a></li>
           <li class="photo-and-video"><a  href="photov-video.html">Фото и видео</a></li>
           <li class="map-state"><a  href="mapstate.html">Карта штата</a></li>
-          <li class="hotels"><a  href="catalog.html">Гостиницы</a></li>
+          <li class="hotels"><a class="hotel-url" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -28,36 +28,30 @@
           <fieldset class="filter-list">
             <legend class="filter-legend">Инфраструктура:</legend>
             <p class="filter-option">
-              <input type="checkbox" class="visually-hidden" id="pool" name="pool-filter" value="pool" checked>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              <input class="checkbox" type="checkbox" id="pool" name="pool-filter" value="pool" checked>
               <label for="pool">Бассейн</label>
             </p>
             <p class="filter-option">
-              <input type="checkbox" class="visually-hidden" id="parking"  name="parking-filter" value="parking">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+              <input class="checkbox" type="checkbox" id="parking"  name="parking-filter" value="parking">
               <label for="parking">Парковка</label>
             </p>
             <p  class="filter-option">
-              <input type="checkbox" class="visually-hidden" id="wi-fi" name="wi-fi-filter" value="wifi">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+              <input class="checkbox" type="checkbox" id="wi-fi" name="wi-fi-filter" value="wifi">
               <label for="wi-fi">Wi-fi</label>
             </p>
           </fieldset>
           <fieldset class="filter-list">
             <legend class="filter-legend">Тип жилья:</legend>
             <p class="filter-option">
-              <input type="checkbox" class="visually-hidden" id="hotel" name="hotel-filter" value="hotel" checked>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              <input class="checkbox" type="checkbox" id="hotel" name="hotel-filter" value="hotel" checked>
               <label for="hotel">Гостиница</label>
             </p>
             <p class="filter-option">
-              <input type="checkbox" class="visually-hidden" id="motel" name="motel-filter" value="motel" checked>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              <input class="checkbox" type="checkbox" id="motel" name="motel-filter" value="motel" checked>
               <label for="motel">Мотель</label>
             </p>
             <p class="filter-option">
-              <input type="checkbox" class="visually-hidden" id="apartaments" name="apartaments-filter" value="aparatments" checked>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+              <input class="checkbox" type="checkbox" id="apartaments" name="apartaments-filter" value="aparatments" checked>
               <label for="apartaments">Апартаменты</label>
             </p>
           </fieldset>
