@@ -343,7 +343,7 @@ fieldset {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
-  width: 345px;
+  width: 342px;
   padding-left: 13px;
   border: 2px solid #eeeeee;
   position: relative;
@@ -351,13 +351,13 @@ fieldset {
 
 .calendar-svg {
   position: absolute;
-  right: 60px;
+  right: 65px;
   top: 80px;
 }
 
 .calendar-svg-departure {
   position: absolute;
-  right: 60px;
+  right: 65px;
   top: 152px;
 }
 
@@ -370,7 +370,16 @@ fieldset {
   width: 25px;
 }
 
+.people-block {
+  display: flex;
+  width: 519px;
+  justify-content: space-between;
+}
+
 .form-arrive .adults {
+  display: flex;
+  width: 223px;
+  justify-content: space-between;
   align-self: flex-start;
 }
 
@@ -649,6 +658,7 @@ fieldset {
   flex-direction: row;
   padding: 30px 73px;
   border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
 }
 
 .first-column {
@@ -684,6 +694,19 @@ fieldset {
 .price {
   margin: 0;
   align-self: center;
+}
+
+.hotel-price-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hotels-item-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .more-info {
@@ -882,8 +905,4 @@ margin-right: 7px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.logo-htmlacademy:hover {
-  fill: #81b3d2;
 }
