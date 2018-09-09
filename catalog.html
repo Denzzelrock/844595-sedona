@@ -26,21 +26,24 @@
         <h3 class="visually-hidden">Фильтр поиска</h3>
         <form action="#" method="get" class="filter-category">
           <fieldset class="filter-list">
-            <legend class="filter-legend">Инфраструктура:</legend>
-            <p class="filter-option">
-              <input class="checkbox" type="checkbox" id="pool" name="pool-filter" value="pool" checked>
-              <label for="pool">Бассейн</label>
-            </p>
-            <p class="filter-option">
-              <input class="checkbox" type="checkbox" id="parking"  name="parking-filter" value="parking">
-              <label for="parking">Парковка</label>
-            </p>
-            <p  class="filter-option">
-              <input class="checkbox" type="checkbox" id="wi-fi" name="wi-fi-filter" value="wifi">
-              <label for="wi-fi">Wi-fi</label>
-            </p>
+            <div class="filter-block-inf">
+              <legend class="filter-legend">Инфраструктура:</legend>
+              <p class="filter-option">
+                <input class="checkbox" type="checkbox" id="pool" name="pool-filter" value="pool" checked>
+                <label for="pool">Бассейн</label>
+              </p>
+              <p class="filter-option">
+                <input class="checkbox" type="checkbox" id="parking"  name="parking-filter" value="parking">
+                <label for="parking">Парковка</label>
+              </p>
+              <p  class="filter-option">
+                <input class="checkbox" type="checkbox" id="wi-fi" name="wi-fi-filter" value="wifi">
+                <label for="wi-fi">Wi-fi</label>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="filter-list">
+            <div class="filter-block-house">
             <legend class="filter-legend">Тип жилья:</legend>
             <p class="filter-option">
               <input class="checkbox" type="checkbox" id="hotel" name="hotel-filter" value="hotel" checked>
@@ -54,6 +57,7 @@
               <input class="checkbox" type="checkbox" id="apartaments" name="apartaments-filter" value="aparatments" checked>
               <label for="apartaments">Апартаменты</label>
             </p>
+          </div>
           </fieldset>
           <fieldset>
             <div class="filter-range">
