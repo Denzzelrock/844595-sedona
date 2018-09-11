@@ -95,15 +95,16 @@ nav a .information:active {
 
   width: 100%;
   margin: 0;
-  padding-right: 73px;
-  padding-left: 73px;
+  padding-right: 71px;
+  padding-left: 71px;
+  position: relative;
 
   align-items: center;
   justify-content: space-around;
 }
 
 .information {
-  width: 20%;
+  width: 276px;
 
   text-align: left;
 }
@@ -117,19 +118,19 @@ nav a .information:active {
 }
 
 .photo-and-video {
-  width: 20%;
+  width: 271px;
 
   text-align: left;
 }
 
 .map-state {
-  width: 20%;
+  width: 36%;
 
   text-align: right;
 }
 
 .hotels {
-  width: 20%;
+  width: 279px;
 
   text-align: right;
 }
@@ -161,7 +162,7 @@ nav a .information:active {
   width: 1200px;
 }
 
-.reasons{
+.reasons {
   display: flex;
   flex-direction: row;
 
@@ -169,15 +170,23 @@ nav a .information:active {
 }
 
 .about-info {
-  line-height: 25px;
+  line-height: 26px;
   width: 487px;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 57px;
+  padding-top: 40px;
+  padding-bottom: 38px;
 
   text-align: center;
 
   background-color: white;
+}
+
+.about-info h2 {
+  margin-top: 22px;
+}
+
+.about-info p {
+  margin-top: 25px;
 }
 
 .reason-bgblue {
@@ -205,8 +214,6 @@ nav a .information:active {
 .reason-bgblue ul {
   display: flex;
 
-  padding-left: 0px;
-
   list-style: none;
 
   align-items: center;
@@ -232,7 +239,13 @@ nav a .information:active {
   box-sizing: border-box;
   width: calc(100% / 3);
   height: 120px;
-  padding: 46px 60px 64px;
+  padding: 46px 49px 64px;
+
+  text-align: center;
+}
+
+.reasonbgg {
+  padding: 46px 0px 64px;
 
   text-align: center;
 }
@@ -251,18 +264,39 @@ nav a .information:active {
 .white-font-tittle  {
   width: 215px;
   margin: 15px auto;
+  margin-bottom: 24px;
+  margin-top: 1px
+}
+
+.reason p {
+  margin-top: 21px;
+  width: 302px;
 }
 
 .reasonbgg h2 {
   width: 150px;
-  margin: 15px auto;
+  margin-bottom: 27px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reasonbgg p {
+  width: 261px;
+  margin-left: 70px;
+  margin-top: 19px;
+  margin-right: 0;
 }
 
 .reason-list {
   box-sizing: border-box;
   width: 1200px;
-  height: 330px;
   margin: 0;
+
+  padding-top: 63px;
+  padding-bottom: 58px;
+  padding-left: 13px;
+  padding-right: 12px;
 
   text-align: center;
 
@@ -270,15 +304,35 @@ nav a .information:active {
 }
 
 .reason-item-house {
-  padding-left: -30px;
+  display: flex;
+  width: 290px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reason-item-house p {
-  width: 325px;
+  width: 300px;
+}
+
+.reason-item-eat {
+  display: flex;
+  width: 290px;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 34px;
+  margin-left: 28px;
 }
 
 .reason-item-eat p {
   width: 285px;
+}
+
+.reason-item-souvenirs {
+  display: flex;
+  width: 273px;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 12px
 }
 
 .reason-item-souvenirs p {
@@ -313,7 +367,7 @@ fieldset {
   flex-direction: column;
 
   margin: 0;
-  padding-top: 60px;
+  padding-top: 50px;
 
   background-color: white;
 
@@ -325,7 +379,7 @@ fieldset {
   line-height: 36px;
   font-weight: bold;
 
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 
   color: #000000;
 }
@@ -337,16 +391,11 @@ fieldset {
 
   width: 440px;
   margin: 0;
-  padding-bottom: 55px;
+  padding-bottom: 46px;
 
   text-align: center;
 
   color: #333333;
-}
-
-.reasonbgg p {
-  width: 257px;
-  margin: 15px auto;
 }
 
 .search-button {
@@ -354,9 +403,9 @@ fieldset {
   font-weight: bold;
   line-height: 26px;
   padding-top: 30px;
-  padding-right: 145px;
+  padding-right: 140px;
   padding-bottom: 30px;
-  padding-left: 145px;
+  padding-left: 140px;
 
   color: #ffffff;
   background-color: #766357;
@@ -371,19 +420,6 @@ fieldset {
   background-color: #503e33;
 }
 
-.about-info {
-  width: 487px;
-  margin: auto;
-  padding-top: 60px;
-  padding-bottom: 57px;
-
-  text-align: center;
-}
-
-.map-img {
-  height: 641px;
-}
-
 .form-and-map {
   position: relative;
 }
@@ -395,15 +431,15 @@ fieldset {
 
   position: absolute;
   z-index: 12;
-  left: 309px;
+  left: 316px;
 
   display: flex;
   flex-direction: row;
 
-  width: 470px;
+  width: 458px;
   height: auto;
   margin: auto;
-  padding: 55px 55px;
+  padding: 40px 55px;
 
   color: #000000;
   background: white;
@@ -427,9 +463,9 @@ fieldset {
 
   position: relative;
 
-  width: 342px;
-  height: 38px;
-  padding-left: 13px;
+  width: 327px;
+  height: 33px;
+  padding-left: 9px;
 
   border: none;
   border: 2px solid #eeeeee;
@@ -450,8 +486,8 @@ fieldset {
 
 .btn-calendar-arrive {
   position: absolute;
-  top: 80px;
-  left: 492px;
+  top: 64px;
+  left: 483px;
 
   width: 22px;
   height: 23px;
@@ -492,8 +528,8 @@ fieldset {
 
 .btn-calendar-departure {
   position: absolute;
-  top: 151px;
-  left: 492px;
+  top: 131px;
+  left: 484px;
 
   width: 22px;
   height: 23px;
@@ -569,7 +605,7 @@ fieldset {
 
 .form-arrive button:not(.button-tofind):not(.btn-calendar-arrive):not(.btn-calendar-departure) {
   width: 35px;
-  height: 44px;
+  height: 39px;
   margin: -4px;
   padding: 0;
 
@@ -583,12 +619,12 @@ fieldset {
   font-weight: bold;
   line-height: 26px;
 
-  margin-top: 55px;
-  margin-left: 8px;
-  padding-top: 21px;
-  padding-right: 195px;
-  padding-bottom: 21px;
-  padding-left: 195px;
+  margin-top: 43px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 196px;
+  padding-right: 196px;
+  margin-bottom: 13px;
 
   text-transform: uppercase;
 
@@ -1140,7 +1176,7 @@ fieldset {
   flex-direction: row;
 
   position: relative;
-  margin-top: -120px;
+  margin-top: -125px;
   height: 120px;
 
   background-color: rgba(254,254,254,0.9);
