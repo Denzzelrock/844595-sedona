@@ -138,28 +138,27 @@ nav a .information:active {
 .main-showcase {
   position: relative;
 
-  display: flex;
-
   width: 100%;
   height: 508px;
-
 
   background-image: url('../img/showcase-bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-
-  justify-content: center;
+  background-position: center;
 }
 
 .showcase {
   width: 459px;
+  position: absolute;
+  left: 371px;
+  top: 76px;
 }
 
 .mask {
   position: absolute;
   bottom: 0px;
 
-  width: 1200px;
+  width: 100%;
 }
 
 .reasons {
@@ -238,8 +237,7 @@ nav a .information:active {
 .reasonbgg {
   box-sizing: border-box;
   width: calc(100% / 3);
-  height: 120px;
-  padding: 46px 49px 64px;
+  padding: 45px 49px;
 
   text-align: center;
 }
