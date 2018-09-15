@@ -51,7 +51,7 @@ a {
   height: 56px;
   padding: 0;
 
-  color: #00000;
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -109,12 +109,8 @@ nav a .information:active {
   text-align: left;
 }
 
-.hotel-url {
+.active {
   color: #766357;
-}
-
-.information-url {
- color: #766357;
 }
 
 .photo-and-video {
@@ -296,6 +292,8 @@ nav a .information:active {
   padding-left: 13px;
   padding-right: 12px;
 
+  background-color: white;
+
   text-align: center;
 
   justify-content: space-around;
@@ -350,10 +348,6 @@ nav a .information:active {
 
 fieldset {
   border: none;
-}
-
-.reason-list {
-  background-color: white;
 }
 
 .reasonbg {
@@ -498,8 +492,8 @@ fieldset {
 
 .btn-calendar-arrive:hover {
   position: absolute;
-  top: 80px;
-  left: 492px;
+  top: 64px;
+  left: 483px;
 
   width: 22px;
   height: 23px;
@@ -512,8 +506,8 @@ fieldset {
 
 .btn-calendar-arrive:focus {
   position: absolute;
-  top: 80px;
-  left: 492px;
+  top: 64px;
+  left: 483px;
 
   width: 22px;
   height: 23px;
@@ -540,8 +534,8 @@ fieldset {
 
 .btn-calendar-departure:hover {
   position: absolute;
-  top: 151px;
-  left: 492px;
+  top: 131px;
+  left: 484px;
 
   width: 22px;
   height: 23px;
@@ -554,8 +548,8 @@ fieldset {
 
 .btn-calendar-departure:focus {
   position: absolute;
-  top: 151px;
-  left: 492px;
+  top: 131px;
+  left: 484px;
 
   width: 22px;
   height: 23px;
@@ -652,12 +646,14 @@ fieldset {
 
 .filter-category {
   display: flex;
+  padding-right: 73px;
+  padding-left: 73px
 }
 
 .filter-category .filter-list {
-  margin-left: 40px;
-  padding-right: 0;
-  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
 
   align-self: center;
 }
@@ -666,12 +662,6 @@ fieldset {
   display:flex;
 
   width: 180px;
-}
-
-.filter-option fieldset {
-  padding: 0;
-
-  flex-grow: 1;
 }
 
 .filter-block-house {
@@ -696,11 +686,16 @@ fieldset {
   margin-left: 22px;
 }
 
+fieldset {
+  padding: 0;
+  margin-left: 50px;
+}
+
 .filter-range {
-  width: 330px;
+  width: 315px;
   margin: 50px auto;
   margin-top: 30px;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
   margin-left:  195px;
 
   text-transform: uppercase;
@@ -850,7 +845,7 @@ fieldset {
   position: relative;
 
   margin: 0;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 39px;
 }
 
 .checkbox + label:before {
@@ -925,9 +920,10 @@ fieldset {
   flex-direction: row;
 
   width: auto;
-  height: 90px;
   padding-right: 73px;
   padding-left: 73px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 
   border-bottom: 1px solid #e5e5e5;
 
@@ -939,7 +935,7 @@ fieldset {
   display: flex;
   flex-direction: row;
 
-  margin-left: 105px;
+  margin-left: 95px;
 
   align-items: center;
   flex-grow: 1;
@@ -950,8 +946,6 @@ fieldset {
   line-height: 26px;
 
   display: flex;
-
-  margin-left: 23px;
 }
 
 .results-bar .results-sorting {
@@ -959,7 +953,7 @@ fieldset {
   flex-direction: row;
 
   box-sizing: border-box;
-  width: 316px;
+  width: 280px;
   padding: 0;
 
   justify-content: space-around;
@@ -976,7 +970,7 @@ fieldset {
 
   margin-right: -45px;
   margin-left: -45px;
-  padding-right: 67px;
+  padding-right: 62px;
 
   color: black;
 }
@@ -1022,7 +1016,7 @@ fieldset {
   display: flex;
   flex-direction: row;
 
-  padding: 30px 73px;
+  padding: 13px 72px;
 
   border-bottom: 1px solid #e5e5e5;
 
@@ -1030,13 +1024,14 @@ fieldset {
 }
 
 .hotel figure {
-  margin-left: 23px;
+  margin-left: 0px;
+  margin-right: 30px;
 }
 
 .first-column {
   display: flex;
 
-  width: 190px;
+  width: 182px;
 
   justify-content: space-between;
 }
@@ -1054,7 +1049,8 @@ fieldset {
 }
 
 .hotel h3 {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
 
   align-self: flex-start;
 }
@@ -1071,6 +1067,11 @@ fieldset {
   margin: 0;
 
   align-self: center;
+}
+
+.hotel-class {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .hotel-price-info {
@@ -1093,8 +1094,8 @@ fieldset {
   font-weight: bold;
   line-height: 26px;
 
-  margin-right: 5px;
-  padding: 8px 18px;
+  margin-right: 2px;
+  padding: 4px 17px;
 
   color: #ffffff;
   background-color: #81b3d2;
@@ -1117,7 +1118,7 @@ fieldset {
   font-weight: bold;
   line-height: 26px;
 
-  padding: 8px 18px;
+  padding: 4px 17px;
 
   color: #ffffff;
   background-color: #766357;
@@ -1134,14 +1135,32 @@ fieldset {
   background-color: #503e33;
 }
 
+.hotels-item-stars {
+  display: flex;
+  width: 92px;
+  justify-content: space-between;
+  margin-top: 15px
+}
+
+.hotels-item-stars-desert {
+  margin-top: 15px;
+}
+
+.hotels-item-stars-diablo {
+  margin-top: 15px;
+}
+
 .rating-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
 
   width: 110px;
   height: 28px;
-  padding-top: 6px;
+  margin-bottom: 19px;
 
   text-align: center;
 
@@ -1196,6 +1215,11 @@ fieldset {
   align-items: center;
 }
 
+.social-networks {
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+}
 
 .twitter  {
   padding-top: 17px;
@@ -1254,11 +1278,18 @@ fieldset {
   font-weight: bold;
   line-height: 26px;
 
+  width: 33.3%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
   color: #000000;
 }
 
 .footer-copyrigt {
   display: flex;
+  width: 33.3%;
+  justify-content: center
 }
 
 .footer-copyrigt span {
@@ -1298,7 +1329,6 @@ input:not(.max-price) {
 
   width: 155px;
   padding: 0;
-  padding-left: 65px;
 
   justify-content: space-around;
 }
@@ -1309,7 +1339,6 @@ input:not(.max-price) {
 
   width: 155px;
   padding: 0;
-  padding-left: 65px;
 
   justify-content: space-around;
 }
