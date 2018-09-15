@@ -103,8 +103,16 @@ nav a .information:active {
   justify-content: space-around;
 }
 
+.nav span {
+  width: 20%;
+}
+
+.site-navigation span {
+  width: 20%;
+}
+
 .information {
-  width: 276px;
+  width: 20%;
 
   text-align: left;
 }
@@ -114,19 +122,19 @@ nav a .information:active {
 }
 
 .photo-and-video {
-  width: 271px;
-
+  width: 20%;
+  padding-left: 50px;
   text-align: left;
 }
 
 .map-state {
-  width: 36%;
-
+  width: 20%;
+  padding-right: 55px;
   text-align: right;
 }
 
 .hotels {
-  width: 279px;
+  width: 20%;
 
   text-align: right;
 }
@@ -580,7 +588,7 @@ fieldset {
 .form-arrive .adults {
   display: flex;
 
-  width: 223px;
+  width: 219px;
 
   justify-content: space-between;
   align-self: flex-start;
@@ -588,6 +596,7 @@ fieldset {
 
 .form-arrive .children {
   text-align: center;
+  width: 221px;
 }
 
 .form-arrive label {
