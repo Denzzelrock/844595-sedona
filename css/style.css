@@ -148,7 +148,7 @@ nav a .information:active {
   background-image: url('../img/showcase-bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: top;
 }
 
 .showcase {
@@ -295,8 +295,8 @@ nav a .information:active {
   width: 1200px;
   margin: 0;
 
-  padding-top: 63px;
-  padding-bottom: 58px;
+  padding-top: 58px;
+  padding-bottom: 69px;
   padding-left: 13px;
   padding-right: 12px;
 
@@ -318,6 +318,11 @@ nav a .information:active {
   width: 300px;
 }
 
+.reason-item-house h3 {
+  margin-bottom: 9px;
+  margin-top: 31px;
+}
+
 .reason-item-eat {
   display: flex;
   width: 290px;
@@ -329,6 +334,11 @@ nav a .information:active {
 
 .reason-item-eat p {
   width: 285px;
+}
+
+.reason-item-eat h3 {
+  margin-bottom: 10px;
+  margin-top: 32px;
 }
 
 .reason-item-souvenirs {
@@ -343,6 +353,11 @@ nav a .information:active {
   width: 271px;
 
   list-style: none;
+}
+
+.reason-item-souvenirs h3 {
+  margin-bottom: 10px;
+  margin-top: 28px;
 }
 
 .footer-social {
@@ -360,6 +375,11 @@ fieldset {
 
 .reasonbg {
   background-color: #ffffff;
+}
+
+.reasonbgg p {
+  width: 261px;
+  margin: 20px auto;
 }
 
 .search {
@@ -604,7 +624,7 @@ fieldset {
   padding-right: 15px;
 }
 
-.form-arrive button:not(.button-tofind):not(.btn-calendar-arrive):not(.btn-calendar-departure) {
+.form-arrive .btn-counter {
   width: 35px;
   height: 39px;
   margin: -4px;
@@ -651,6 +671,7 @@ fieldset {
   background-image: url('../img/fonblur.png');
   background-repeat: no-repeat;
   background-position: center;
+  padding-bottom: 5px;
 }
 
 .filter-category {
@@ -662,7 +683,7 @@ fieldset {
 .filter-category .filter-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 15px;
+  padding-top: 22px;
 
   align-self: center;
 }
@@ -724,7 +745,7 @@ fieldset {
 
   position: relative;
 
-  height: 36px;
+  height: 31px;
   margin-bottom: 20px;
 
   border: 2px solid #ffffff;
@@ -739,7 +760,7 @@ fieldset {
   width: 2px;
   height: 22px;
 
-  content: "";
+  content: '';
   transform: translate(-50%, -50%);
 
   background: #ffffff;
@@ -859,7 +880,7 @@ fieldset {
 
 .checkbox + label:before {
   position: absolute;
-  top: -4px;
+  top: -6px;
   left: 0;
 
   width: 50px;
@@ -870,7 +891,7 @@ fieldset {
 
 .checkbox + label:after {
   position: absolute;
-  top: -4px;
+  top: -6px;
   left: 0px;
 
   width: 50px;
@@ -891,7 +912,7 @@ fieldset {
 }
 
 .checkbox:focus + label:before {
-  top: -4px;
+  top: -6px;
   left: 0px;
 
   width: 50px;
@@ -1195,6 +1216,7 @@ fieldset {
 
 .results {
   background-color: white;
+  padding-bottom: 125px
 }
 
 .main-footer {
@@ -1203,19 +1225,6 @@ fieldset {
 
   position: relative;
   margin-top: -125px;
-  height: 120px;
-
-  background-color: rgba(254,254,254,0.9);
-
-  justify-content: space-around;
-  align-items: center;
-}
-
-.main-footer-catalog {
-  display: flex;
-  flex-direction: row;
-
-  position: relative;
   height: 120px;
 
   background-color: rgba(254,254,254,0.9);
